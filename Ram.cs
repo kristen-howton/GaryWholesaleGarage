@@ -1,6 +1,6 @@
 namespace Garage
 {
-    public class Ram // Gas powered truck
+    public class Ram : Vehicle // Gas powered truck
     {
         public double FuelCapacity { get; set; }
         public string MainColor { get; set; }
