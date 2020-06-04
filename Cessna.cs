@@ -16,9 +16,9 @@ namespace Garage
             Console.WriteLine($"The {MainColor} cessna flashes by like a hurricane");
         }
 
-        public override void Turn()
+        public override void Turn(string direction)
         {
-            Console.WriteLine($"The cessna carefully turns right.");
+            Console.WriteLine($"The cessna carefully turns {direction}.");
         }
         public override void Stop()
         {

@@ -13,9 +13,9 @@ namespace Garage
         {
             Console.WriteLine($"The {MainColor} zero zips by you. Yeeeeeowwww!");
         }
-        public override void Turn()
+        public override void Turn(string direction)
         {
-            Console.WriteLine($"The zero carefully turns right.");
+            Console.WriteLine($"The zero carefully turns {direction}.");
         }
         public override void Stop()
         {

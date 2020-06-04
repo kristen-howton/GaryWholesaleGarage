@@ -12,9 +12,9 @@ namespace Garage
         {
             Console.WriteLine("The vehicle drives by!!");
         }
-        public virtual void Turn()
+        public virtual void Turn(string direction)
         {
-            Console.WriteLine("The vehicle turns a random direction!");
+            Console.WriteLine($"The vehicle turns a random {direction}!");
         }
         public virtual void Stop()
         {

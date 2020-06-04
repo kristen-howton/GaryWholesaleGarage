@@ -14,9 +14,9 @@ namespace Garage
         {
             Console.WriteLine($"The {MainColor} tesla blazes by you.");
         }
-        public override void Turn()
+        public override void Turn(string direction)
         {
-            Console.WriteLine($"The tesla squelas around a right turn.");
+            Console.WriteLine($"The tesla squelas around a {direction} turn.");
         }
         public override void Stop()
         {
