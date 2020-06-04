@@ -32,18 +32,25 @@ namespace Garage
                 BatteryKWh = 20.0
             };
             truck.Drive();
-            plane.Drive();
-            car.Drive();
-            motorcycle.Drive();
-
             truck.Turn();
-            plane.Turn();
-            car.Turn();
-            motorcycle.Turn();
-
             truck.Stop();
+
+            Console.WriteLine("");
+
+            plane.Drive();
+            plane.Turn();
             plane.Stop();
+
+            Console.WriteLine("");
+
+            car.Drive();
+            car.Turn();
             car.Stop();
+
+            Console.WriteLine("");
+
+            motorcycle.Drive();
+            motorcycle.Turn();
             motorcycle.Stop();
 
             List<Ram> trucks = new List<Ram>();
