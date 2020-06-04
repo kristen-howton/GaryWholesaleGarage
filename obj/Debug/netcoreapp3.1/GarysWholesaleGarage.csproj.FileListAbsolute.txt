@@ -1,0 +1,13 @@
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\bin\Debug\netcoreapp3.1\GarysWholesaleGarage.exe
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\bin\Debug\netcoreapp3.1\GarysWholesaleGarage.deps.json
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\bin\Debug\netcoreapp3.1\GarysWholesaleGarage.runtimeconfig.json
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\bin\Debug\netcoreapp3.1\GarysWholesaleGarage.runtimeconfig.dev.json
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\bin\Debug\netcoreapp3.1\GarysWholesaleGarage.dll
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\bin\Debug\netcoreapp3.1\GarysWholesaleGarage.pdb
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.csprojAssemblyReference.cache
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.AssemblyInfoInputs.cache
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.AssemblyInfo.cs
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.csproj.CoreCompileInputs.cache
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.dll
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.pdb
+C:\Users\Jon\workspace\csharp\exercises\GarysWholesaleGarage\obj\Debug\netcoreapp3.1\GarysWholesaleGarage.genruntimeconfig.cache
