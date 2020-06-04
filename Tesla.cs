@@ -10,8 +10,17 @@ namespace Garage
             // method definition omitted
         }
         public override void Drive()
+
         {
-            Console.WriteLine($"The {MainColor} tesla blazes by you! Yeowwwl");
+            Console.WriteLine($"The {MainColor} tesla blazes by you.");
+        }
+        public override void Turn()
+        {
+            Console.WriteLine($"The tesla squelas around a right turn.");
+        }
+        public override void Stop()
+        {
+            Console.WriteLine($"The {MainColor} tesla silently stops as if it never moved.");
         }
     }
 }

@@ -36,6 +36,16 @@ namespace Garage
             car.Drive();
             motorcycle.Drive();
 
+            truck.Turn();
+            plane.Turn();
+            car.Turn();
+            motorcycle.Turn();
+
+            truck.Stop();
+            plane.Stop();
+            car.Stop();
+            motorcycle.Stop();
+
             List<Ram> trucks = new List<Ram>();
             trucks.Add(truck);
         }
