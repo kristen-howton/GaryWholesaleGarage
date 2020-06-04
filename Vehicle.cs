@@ -10,15 +10,15 @@ namespace Garage
         //virtual gives other modules right to use this method
         public virtual void Drive()
         {
-            Console.WriteLine($"The {MainColor} ZOOOOOM!!");
+            Console.WriteLine("The vehicle drives by!!");
         }
         public virtual void Turn()
         {
-            Console.WriteLine($"The {MainColor} turns right!!");
+            Console.WriteLine("The vehicle turns a random direction!");
         }
         public virtual void Stop()
         {
-            Console.WriteLine($"The {MainColor} silently stops!!");
+            Console.WriteLine("The vehicle stops.");
         }
     }
 }
