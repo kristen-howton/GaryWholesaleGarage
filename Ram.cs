@@ -13,7 +13,15 @@ namespace Garage
         //override to allow to change
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} ram zips by you!");
+            Console.WriteLine($"The {MainColor} ram growls by you. Rrrrrumbbble.");
+        }
+        public override void Turn()
+        {
+            Console.WriteLine($"The ram carefully turns right.");
+        }
+        public override void Stop()
+        {
+            Console.WriteLine($"The {MainColor} ram gently rolls to a stop.");
         }
     }
 }
