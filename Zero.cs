@@ -2,12 +2,20 @@ using System;
 
 namespace Garage
 {
-    public class Zero : Vehicle // Electric motorcycle
+    public class Zero : Vehicle, IElectricVehicle // Electric motorcycle
     {
         public double BatteryKWh { get; set; }
+        public double CurrentChargePercentage
+        {
+            get
+            {
+                return _currentBatteryLevel / BatteryKWh * 100;
+            }
+        }
+        private double _currentBatteryLevel = 0;
         public void ChargeBattery()
         {
-            // method definition omitted
+            _currentBatteryLevel = BatteryKWh;
         }
         public override void Drive()
         {
