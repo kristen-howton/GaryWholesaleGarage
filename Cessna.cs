@@ -2,23 +2,28 @@ using System;
 
 namespace Garage
 {
-    public class Cessna : Vehicle // Propellor light aircraft
+    public class Cessna : Vehicle, IGasVehicle // Propellor light aircraft
     {
         public double FuelCapacity { get; set; }
-
+        public double CurrentTankPercentage
+        {
+            get
+            {
+                return _currentFuelLevel / FuelCapacity * 100;
+            }
+        }
+        private double _currentFuelLevel = 0;
         public void RefuelTank()
         {
-            // method definition omitted
+            _currentFuelLevel = FuelCapacity;
         }
-
         public override void Drive()
         {
             Console.WriteLine($"The {MainColor} cessna flashes by like a hurricane");
         }
-
-        public override void Turn()
+        public override void Turn(string direction)
         {
-            Console.WriteLine($"The cessna carefully turns right.");
+            Console.WriteLine($"The cessna carefully turns {direction}.");
         }
         public override void Stop()
         {

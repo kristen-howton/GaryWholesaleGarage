@@ -7,11 +7,51 @@ namespace Garage
     {
         static void Main(string[] args)
         {
+
+            Tesla car = new Tesla()
+            {
+                MainColor = "black",
+                MaximumOccupancy = "20",
+                BatteryKWh = 10.0
+            };
+            Zero motorcycle = new Zero()
+            {
+                MainColor = "black",
+                MaximumOccupancy = "20",
+                BatteryKWh = 15.0
+            };
+
+            List<IElectricVehicle> electricVehicles = new List<IElectricVehicle>()
+            {
+                motorcycle,
+                car
+
+            };
+
+            Console.WriteLine("Electric Vehicles");
+            foreach (IElectricVehicle ev in electricVehicles)
+            {
+                Console.WriteLine($"{ev.CurrentChargePercentage:N2}");
+            }
+
+            foreach (IElectricVehicle ev in electricVehicles)
+            {
+                // This should charge the vehicle to 100%
+                ev.ChargeBattery();
+            }
+
+            foreach (IElectricVehicle ev in electricVehicles)
+            {
+                Console.WriteLine($"{ev.CurrentChargePercentage:N2}");
+            }
+
+            /***********************************************/
+
             Cessna plane = new Cessna()
             {
                 MainColor = "blue",
                 MaximumOccupancy = "6",
-                FuelCapacity = 20.0
+                FuelCapacity = 30.0
             };
             Ram truck = new Ram()
             {
@@ -19,42 +59,29 @@ namespace Garage
                 MaximumOccupancy = "20",
                 FuelCapacity = 20.0
             };
-            Tesla car = new Tesla()
+
+            List<IGasVehicle> gasVehicles = new List<IGasVehicle>()
             {
-                MainColor = "black",
-                MaximumOccupancy = "20",
-                BatteryKWh = 20.0
+                truck,
+                plane
             };
-            Zero motorcycle = new Zero()
+
+            Console.WriteLine("Gas Vehicles");
+            foreach (IGasVehicle gv in gasVehicles)
             {
-                MainColor = "black",
-                MaximumOccupancy = "20",
-                BatteryKWh = 20.0
-            };
-            truck.Drive();
-            truck.Turn();
-            truck.Stop();
+                Console.WriteLine($"{gv.CurrentTankPercentage:N2}");
+            }
 
-            Console.WriteLine("");
+            foreach (IGasVehicle gv in gasVehicles)
+            {
+                // This should completely refuel the gas tank
+                gv.RefuelTank();
+            }
 
-            plane.Drive();
-            plane.Turn();
-            plane.Stop();
-
-            Console.WriteLine("");
-
-            car.Drive();
-            car.Turn();
-            car.Stop();
-
-            Console.WriteLine("");
-
-            motorcycle.Drive();
-            motorcycle.Turn();
-            motorcycle.Stop();
-
-            List<Ram> trucks = new List<Ram>();
-            trucks.Add(truck);
+            foreach (IGasVehicle gv in gasVehicles)
+            {
+                Console.WriteLine($"{gv.CurrentTankPercentage:N2}");
+            }
         }
     }
 }
